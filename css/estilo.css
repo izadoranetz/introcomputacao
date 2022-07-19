@@ -41,9 +41,21 @@ h2.subtitulos {
 }
 
 .img-timeline {
-  width: 25vw; 
-  min-width: 100px;
   border: 1px solid #122620;
+}
+
+.img-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.legenda {
+  text-align: center;
+}
+
+.imagem {
   margin: 0 auto;
 }
 

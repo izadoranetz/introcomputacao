@@ -113,6 +113,7 @@ h2.subtitulos {
 
 .imagem {
   margin: 0 auto;
+  height: 300px;
 }
 
 /* The actual timeline (the vertical ruler) */

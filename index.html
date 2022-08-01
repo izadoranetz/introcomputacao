@@ -9,23 +9,31 @@
 </head>
 <body>
   <nav class="menu-container">
-    <a href="#" class="menu-link">Index</a>
-    <a href="#" class="menu-link">Histórico Computadores</a>
-    <a href="#" class="menu-link">Processadores</a>
-    <a href="#" class="menu-link">Memória</a>
-    <a href="#" class="menu-link">Recomendações</a>
+    <ul>
+      <li><a href="#historico" class="menu-link">Histórico Computadores</a></li>
+      <li><a href="#processadores" class="menu-link">Processadores</a></li>
+      <li><a href="#memoria" class="menu-link">Memória</a></li>
+      <li><a href="#referencias" class="menu-link">Referências</a></li>
+      <li><a href="recomendacoes.html" class="menu-link">Recomendações</a></li>
+    </ul>
   </nav>
 <header class="apresentacao">
-  <h1>Introdução à Computação: histórico dos computadores, processadores e memória</h1>
-  <div class="descricao"><p>TSI - Noturno 2022/1</p>
-    <ul>
-      <li>Cleuber Inácio</li>
-      <li>Dayane Ferreira</li>
-      <li>Izadora Netz</li>
-    </ul>
+  <div id="apresentacao-container">
+    <div id="apresentacao-titulo">
+      <h1>Introdução à Computação</h1>
+      <p>Histórico dos computadores, processadores e memória</p>
+      <ul>
+        <li>Instituto Federal de Brasília</li>
+        <li>Tecnologia em Sistemas para Internet - Noturno</li>
+        <li>Projeto para Disciplina de Introdução à Computação</li>
+        <li>Autores: Cleuber Inácio, Dayane Ferreira e Izadora Netz</li>
+      </ul>
+    </div>
+    <div id="apresentacao-imagem">
+      <img src="img/header.png" alt="" />
+    </div>
   </div>
 </header>
-
 <section id="historico">
   <h2 class="subtitulos">Histórico e evolução dos computadores</h2>
   <section class="time-line-box" id="inicio">
@@ -215,8 +223,8 @@
   
       </div>
     </div>
-    <div class="container left">
-      <div class="content"  id="anos80">
+    <div class="container left" id="anos80">
+      <div class="content">
         <h2>Anos 80</h2>
   
             <p>Com o desenvolvimento dos computadores na década de 1970, os computadores se tornaram mais comercializados na década de 1980, pois se tornaram mais atraentes e fáceis de usar à medida que mais e mais pessoas os compravam.</p>
@@ -225,7 +233,7 @@
   
             <div class="img-container">
               <div class="imagem">
-                <img rc="img/ibm5051.png" alt="IBM PC 5051" class="img-timeline">
+                <img src="img/ibm5051.png" alt="IBM PC 5051" class="img-timeline">
               </div>
               <div class="legenda">
                 IBM PC 5051
@@ -482,15 +490,48 @@
   </div>
 </section>
 <section id="processadores">
-  <h2>Processadores</h2>
+  <h2 class="subtitulos">Processadores</h2>
+  <p>Nos idos da década de 50 o computador era uma figura titânica. Como os deuses primordiais da Grécia arcaica, eram enormes, promissores, imponentes e inacessíveis. Sim, o desenvolvimento do computador era algo caro, que exigia parcerias como a realizada entre o exército estadunidense e pesquisadores, com a injeção de um valor de mais de seis milhões de dólares para a sua construção, no caso do famoso Eniac. Durante muito tempo o computador foi um equipamento robusto, apesar das poucas funcionalidades e pouca variedade, de uso quase exclusivo das grandes instituições e empresas. Nada acessível a um mero mortal.
+  </p>
+  <p>Hoje, na era do capitalismo tardio, a ideia de consumo, de nicho de mercado e perfis de consumidor, os equipamento são rápidos, precisos, compactos e com sua existência atrelada aos anseios dos meros mortais, tal qual a segunda e mais conhecida geração de deuses da Grécia antiga, os deuses do Olimpo. Outra característica comum a ambos é a grande variedade que reflete na complexa variedade de necessidades humanas (no caso dos equipamentos, variam não apenas os tipos, como é o caso de computadores de mesa, notebooks, tablets, celulares, etc. E, em cada um desses, muitos modelos compatíveis com diferentes perfis de uso).
+  </p>
+  <p>Assim, se por um lado, o Eniac e seus contemporâneos eram inacessíveis para os meros mortais, hoje a gama de computadores, com suas variadas configurações criam também essa sensação de impossibilidade de acesso para um leigo: o que escolher? Qual a diferença entre as configurações?
+  </p>
+  <p>Neste artigo será feita uma apresentação do processador, mais conhecido como o cérebro do computador. Sem o objetivo de fazer uma análise exaustiva, será apresentada uma relação dos principais modelos disponíveis no mercado, considerando três níveis de usuário, o básico, o intermediário e o avançado. O intuito é apresentar o que muitos consideram a peça central de um computador, que vai condicionar, inclusive, se outros componentes com grande potencial de desempenho poderão executar tal desempenho. Na sequência, faremos uma sugestão de configuração de máquina completa para três perfis de usuários diferentes.
+  </p>
+  <p>O  processador é um componente essencial, pois ele é considerado o cérebro do computador. O processador também é conhecido como Unidade Central de Processamento (CPU).  Ele atua na organização da entrada e da saída dos dados, na gravação das informações na memória e nos dispositivos de armazenamento.A sua função é acelerar, endereçar, resolver e preparar dados. O processador recebe um determinado volume de dados, orientados em padrão binário 0 e 1 e tem a função de responder a esse volume, processando a informação com base em instruções armazenadas em sua memória interna. 
+  </p>
+  <p>Assim, podemos dizer que há três componentes principais que compõem o processador: a Unidade de Controle (UC), a Unidade Lógica e Aritmética (ULA/UAL) e o Registrador. A Unidade de Controle controla o funcionamento da ULA (Unidade Lógica e Aritmética) e da memória, e também é a responsável por distribuir e organizar tarefas, transferir informações da entrada para a memória e da memória para a saída. A Unidade Lógica e Aritmética é responsável pelas operações elementares (soma, subtração, multiplicação e divisão), e pelas decisões lógicas, ou seja, pelas comparações entre informações. Por exemplo, decidir se 8 > 4 ou 8 >=4. O Registrador é um tipo memória com pequena capacidade, porém muito rápida. É utilizada no armazenamento temporário durante o processamento. Os registradores estão no topo da hierarquia de memória e são considerados o meio mais rápido e caro de armazenar um dado. Assim, quanto mais potente e atual forem esses componentes, mais caros são os processadores.
+  </p>
+  <p>Ao escolher um processador o usuário deve ser capaz de identificar suas reais necessidades para que não pague por um processador caríssimo ou para que não pague em um processador que não irá satisfazer suas necessidades. Podemos dizer que há três principais tipos de usuários: os que trabalham com edição de vídeos e modelagem 3D, gamers em geral e usuários domésticos em geral. Sendo assim é necessário que o usuário busque entender em qual grupo ele se encaixa e também qual a marca de processador ele irá comprar. Atualmente há duas principais empresas que produzem processadores: a Intel e a AMD.
+  </p>
+  <p>A rivalidade entre Intel e AMD é bem conhecida no universo da informática e teve seu início nos primórdios da década 90. O primeiro Pentium (Intel) foi lançado em 1993 e chegou a atingir 200 MHz de clock com desenvolvimentos mais avançados. Na sequência, em 1995, a Intel lançou o Pentium Pro que serviu de base para lançamentos futuros como Pentium II, III e Pentium M. Na mesma época, a ADM também estava produzindo CPUs que competiam com a Intel que performavam tão bem quanto, como o AMD K6.
+  </p>
+  <p>Nos anos seguintes, sempre que uma das empresas lançava um modelo de processador a concorrente fazia o lançamento de outro modelo superior meses depois. Anos mais tarde, passando pelo desenvolvimento das tecnologias Multicore e atualização para a arquitetura de 64 bits nos anos 200, as duas empresas ainda competem fortemente e é possível perceber que apresentam CPUs de alta qualidade e são referência no mercado, visto que seus modelos frequentemente encabeçam as listas de melhores processadores ainda hoje.
+  </p>
+  <h4>Intel Core i9 (10900 e 12900)</h4>
+  <p>O processador Core i9 da Intel é top de linha, pois o Core i9 é a linha mais atual e potente no mercado da tecnologia dos processadores da Intel, ou seja, quanto maior for o número, mais poderoso é o processador. Assim, o Core i9 é mais poderoso do que o Core i3, Core i5, e Core i7. Para termos uma ideia, os processadores Core i9 possuem até 18 núcleos, e quanto mais núcleos, mais tarefas simultâneas podem ser executadas. Essa geração de processadores possuem uma frequência que varia de 3.60GHz a 5.20GHz, fazendo com que o computador não trave e trabalhe com mais agilidade.    </p>
+  <p>Participando da linha Core i9, há dois processadores que estão em alta no mercado: o processador Intel Core i9 10900 e o processador Intel Core i9 12900. 
+  </p>
+  <img src="img/icore-i9.png" alt="foto processador Intel Core i9" class="img-processadores" />
+  <p>Mas se eles são top de linha, qual deles é o melhor? Bom, o Intel Core i9 12900 possui o número 12 que é maior do que o Intel Core i9 10900 que possui o número 10. Esses números indicam a geração que esse processador pertence dentro do Core i9. Assim, quanto maior for o número, mais recente é a geração, e consequentemente, melhor será o desempenho do processador. Vejamos agora as diferenças entre essas duas gerações de processadores da Intel Core i9. </p>
+  <p>O Intel Core i9 10900, lançado em abril de 2020, suporta uma capacidade máxima de memória de 128GB, uma memória cache de 20MB, 10 núcleos, 20 threads e sua frequência turbo max pode chegar a 5.20GHz. E custa mais ou menos R$3500,00. 
+  </p>
+  <p>Já o Intel Core i9 12900, lançado em janeiro de 2022, também suporta uma capacidade máxima de memória de 128GB, possui uma memória cache de 30MB, 16 núcleos, 24 threads, e sua frequência turbo max pode chegar a 5.10GHz. E custa mais ou menos R$4350,00.</p>
+  <p>Tanto o Core i9 10900 quanto o Core i9 12900 possuem uma Frequência da Tecnologia Intel® Turbo Boost Max 3.0 de 5.10 GHz. Essa tecnologia  identifica os núcleos mais rápidos do processador e direciona suas cargas de trabalho mais críticas para eles. A linha Core i9 é recomendada para quem trabalha com criação e edição de vídeos e fotos, e também para gamers, devido sua alta capacidade de processamento, evitando travamentos e melhorando o rendimento do usuário.
+  </p>
+  <p>Podemos notar que ambos são parecidos em algumas especificações, mas que o Core i9 12900 possui maior desempenho do que o Core i9 10900, o que deixa claro que por ser de uma geração mais recente ele se torna melhor. Entretanto, por ter um alto custo, ele não vale a pena ser comprado para tarefas mais simples, como apenas acesso a internet, edição de texto e planilhas, jogos mais leves e edição de vídeos e fotos que não demandam um processador top de linha.
+  </p>
+  <h4>AMD Ryzen 9 </h4>
 </section>
-<section id="memória">
-  <h2>Memória</h2>
+<section id="memoria">
+  <h2 class="subtitulos">Memória</h2>
+  <p>Um breve guia sobre as memórias atuais</p>
 </section>
 
-<footer class="referencias">
+<footer class="referencias" id="referencias">
+  <h2 class="h2-referencias">Referências</h2>
 	<div class="container-referencias">
-		<h4>Referências</h4>
 		<div class="referencias-col1">
 			<ul>
 				<li><a href="https://pt.wikipedia.org/wiki/Computa%C3%A7%C3%A3o#cite_note-1" target="_blank">Computação</a></li>
@@ -551,10 +592,20 @@
 				<li><a href="https://thenextweb.com/news/2010-2019-the-rise-of-deep-learning" target="_blank">2010 – 2019: The rise of deep learning</a></li>
 				<li><a href="https://tecmasters.com.br/futuro-computacao-hibrido-quantico/#:~:text=O%20futuro%20%C3%A9%20h%C3%ADbrido,comandos%20para%20as%20m%C3%A1quinas%20qu%C3%A2nticas." target="_blank">O Futuro da Computação</a></li>
 				<li><a href="https://www.globalxetfs.com/a-decade-of-change-how-tech-evolved-in-the-2010s-and-whats-in-store-for-the-2020s/" target="_blank">A Decade of change</a></li>
-			</ul>
+        <li>Ilustrações por Irene Falgueras via Blush Design</li>
+      </ul>
 		</div>
 	</div>
 </footer>
-
+<script>
+  const navbar = document.querySelector('.menu-container');
+  window.onscroll = () => {
+    if (window.scrollY > 300) {
+        navbar.classList.add('menu-container-scrolled');
+    } else {
+        navbar.classList.remove('menu-container-scrolled');
+    }
+  };
+  </script>
 </body>
 </html>

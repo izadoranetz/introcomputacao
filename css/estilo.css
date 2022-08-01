@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
+
 * {
   box-sizing: border-box;
 }
@@ -5,35 +7,88 @@
 body {
   margin: 0;
   background-color: #f4ebd0;
-  font-family: Helvetica, sans-serif;
+  font-family: 'Source Sans Pro', Helvetica, sans-serif;
   color:  #122620;
 }
 
-.apresentacao {  
-  position: relative;
-  max-width: 1200px;
-  margin: 0 auto;
+nav {
+  height: 80px;
 }
 
-nav.menu-container {
-  background-color:#122620;
-  padding: 30px 0 30px 30px;
+.menu-container {
+  background-color: #f4ebd0;
+  padding: 10px 0 10px 30px;
   width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
+.menu-container-scrolled {
+  background-color: #122620;
+  padding: 10px 0 10px 30px;
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  transition: background-color 200ms linear;
 }
 
 .menu-link {
   color: #DECEAF;
-  padding-left: 50px;
+  padding-right: 50px;
   text-transform: capitalize;
 }
 
-h1 {
-  text-align: center;
-  font-size: 2.5rem;
+.menu-container ul {
+  list-style-type: none;
+  padding-bottom: 24px;
+}
+
+.menu-container li {
+  float: left;
+}
+
+#apresentacao-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content:space-evenly;
+}
+
+#apresentacao-titulo {
+  padding-left: 50px;
+}
+
+#apresentacao-titulo h1 {
+  font-size: 48px;
+  font-family: 'Montserrat', sans-serif;
+  padding-bottom: 0;
+  margin: 0;
+}
+
+#apresentacao-titulo p {
+  font-size: 1.6rem;
+  font-family: 'Montserrat', sans-serif;
+  padding: 0;
+  margin: 0;
+  width: 400px;
+}
+
+#apresentacao-titulo ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+
+#historico {
+  padding: 20px 100px;
 }
 
 h2.subtitulos {
   padding: 50px 50px;
+  color: #D6AD60;
+  font-size: 36px;
 }
 
 .descricao {
@@ -287,16 +342,43 @@ a:hover {
   color: #d6ad60;
 }
 
+#processadores {
+  background: #ffffff;
+  padding: 20px 60px;
+}
+
+#processadores h2 {
+  padding: 0;
+  color:#122620;
+}
+
+#memoria {
+  background:#b68d40;
+  padding: 20px 60px;
+}
+
+#memoria h2 {
+  padding: 0;
+}
+
+.img-processadores {
+  margin: 0 auto;
+  border-radius: 10px;
+}
 
 footer.referencias {
-    margin-top: 20px;
-    margin-bottom: 0;
-    padding: 20px 10px;
+    margin: 0;
+    padding: 20px 60px;
     width: 100%;
     background: #DECEAF;
     font-size: 0.8rem;
 }
 
+.h2-referencias {
+  padding-left: 0;
+  color:#122620;
+  font-size: 36px;
+}
 
 footer.referencias li {
     list-style-type: none;

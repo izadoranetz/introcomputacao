@@ -11,6 +11,10 @@ body {
   color:  #122620;
 }
 
+header {
+  height: 60vh;
+}
+
 nav {
   height: 80px;
 }
@@ -86,7 +90,7 @@ nav {
 }
 
 h2.subtitulos {
-  padding: 50px 50px;
+  padding: 20px 50px;
   color: #D6AD60;
   font-size: 36px;
 }
@@ -113,7 +117,6 @@ h2.subtitulos {
 
 .imagem {
   margin: 0 auto;
-  height: 300px;
 }
 
 /* The actual timeline (the vertical ruler) */
@@ -343,14 +346,37 @@ a:hover {
   color: #d6ad60;
 }
 
-#processadores {
-  background: #ffffff;
-  padding: 20px 60px;
+.processadores {
+  padding: 20px 80px;
 }
 
-#processadores h2 {
+.processadores-container {
+  width: 60%;
+  margin: 0 auto;
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 20px;
+}
+
+.introducao {
+  background: #D6AD60;
+}
+
+.tipos {
+  background: #ffffff;
+}
+
+.processadores h2 {
   padding: 0;
   color:#122620;
+}
+
+.processadores h3 {
+  font-size: 36px;
+}
+
+.processadores h4 {
+  font-size: 32px;
 }
 
 #memoria {
@@ -358,13 +384,37 @@ a:hover {
   padding: 20px 60px;
 }
 
-#memoria h2 {
+.memoria-container {
+  width: 60%;
+  margin: 10px auto;
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 20px;
+}
+
+.memoria h2 {
   padding: 0;
 }
 
 .img-processadores {
   margin: 0 auto;
   border-radius: 10px;
+  max-width: 600px;
+  max-height: 200px;
+}
+
+.recomendacoes {
+  background:#f4ebd0;
+  padding: 0 60px;
+  margin-bottom: 40px;
+}
+
+.recomendacoes-container {
+  width: 90%;
+  margin: 0 auto;
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 20px;
 }
 
 footer.referencias {
@@ -383,4 +433,14 @@ footer.referencias {
 
 footer.referencias li {
     list-style-type: none;
+}
+
+.container-referencias {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.referencias-coluna {
+  width: 25%;
+  padding: 8px;
 }

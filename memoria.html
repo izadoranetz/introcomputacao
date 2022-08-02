@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="author" content="Cleuber Inacio, Dayane Ferreira, Izadora Netz," />
+    <link href="css/estilo.css" rel="stylesheet" type="text/css" />
+    <title>Introdução à Computação: histórico dos computadores, processadores e memória</title>
+</head>
+
+<body>
+    <nav class="menu-container">
+        <ul>
+            <li><a href="index.html#historico" class="menu-link">Histórico Computadores</a></li>
+            <li><a href="processadores.html" class="menu-link">Processadores</a></li>
+            <li><a href="#" class="menu-link">Memória</a></li>
+            <li><a href="#referencias" class="menu-link">Referências</a></li>
+            <li><a href="recomendacoes.html" class="menu-link">Recomendações</a></li>
+        </ul>
+    </nav>
+    <header class="apresentacao">
+        <div id="apresentacao-container">
+            <div id="apresentacao-titulo">
+                <h1>Introdução à Computação</h1>
+                <p>Histórico dos computadores, processadores e memória</p>
+                <ul>
+                    <li>Instituto Federal de Brasília</li>
+                    <li>Tecnologia em Sistemas para Internet - Noturno</li>
+                    <li>Projeto para Disciplina de Introdução à Computação</li>
+                    <li>Autores: Cleuber Inácio, Dayane Ferreira e Izadora Netz</li>
+                </ul>
+            </div>
+            <div id="apresentacao-imagem">
+                <img src="img/header.png" alt="" />
+            </div>
+        </div>
+    </header>
+    <section class="memoria">
+        <div class="memoria-container">
+            <h2 class="subtitulos">Memória</h2>
+            <p>Memórias são componentes dos dispositivos que têm como função armazenar dados, seja temporariamente ou
+                permanentemente, e podem ainda ser classificados como primários (ou principais) ou secundários.
+            <p> A memória primária é aquela utilizada pelo processador quando este precisa acessar e endereçar dados, o
+                que é realizado de modo dinâmico, tornando o armazenamento temporário. Exemplos de memória primária são:
+                memória RAM e memória Cache.</p>
+            <p>Já a memória secundária desempenha papel de armazenamento permanente. Discos rígidos, cartões de memória
+                e pendrives são exemplos desse tipo de memória.</p>
+
+            <p>Neste artigo abordaremos os principais tipos de memória, com exemplos de modelos que são destaque no
+                mercado.
+            </p>
+    </section>
+
+    <footer class="referencias" id="referencias">
+        <h2 class="h2-referencias">Referências</h2>
+        <div class="container-referencias">
+            <div class="referencias-coluna">
+                <ul>
+                    <li><a href="#" target="_blank">Link</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script>
+        const navbar = document.querySelector('.menu-container');
+        window.onscroll = () => {
+            if (window.scrollY > 300) {
+                navbar.classList.add('menu-container-scrolled');
+            } else {
+                navbar.classList.remove('menu-container-scrolled');
+            }
+        };
+    </script>
+</body>
+
+</html>

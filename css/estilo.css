@@ -402,6 +402,23 @@ a:hover {
   max-width: 600px;
   max-height: 200px;
 }
+.hd h3 {
+  color: #d6ad60
+}
+.hd-container {
+  width: 60%;
+  margin: 10px auto;
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 20px;
+}
+
+.img-memorias {
+  margin: 0 auto;
+  border-radius: 10px;
+  max-width: 650px;
+  max-height: 320px;
+}
 
 .recomendacoes {
   background:#f4ebd0;

@@ -460,6 +460,7 @@ a:hover {
   max-width: 50px;
   max-height: 50px;
   margin: 0;
+  flex-basis: 5%;
 }
 
 .componentes-container p {

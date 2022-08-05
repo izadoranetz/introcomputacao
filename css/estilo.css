@@ -62,6 +62,7 @@ nav {
 
 #apresentacao-titulo {
   padding-left: 50px;
+  margin-bottom: 40px;
 }
 
 #apresentacao-titulo h1 {
@@ -309,6 +310,11 @@ h2.subtitulos {
   overflow-y:auto;
   justify-content: center;
 }
+
+.swiper-wrapper .mundoatual {
+  width: 385px;
+}
+
 .swiper-container::-webkit-scrollbar-track{
    background:#DECEAF;
 }
@@ -344,10 +350,6 @@ a:link,  a:visited, a:active {
 
 a:hover {
   color: #d6ad60;
-}
-
-.processadores {
-  padding: 20px 80px;
 }
 
 .processadores-container {
@@ -406,19 +408,28 @@ a:hover {
   border-radius: 10px;
   max-width: 600px;
   max-height: 200px;
+  padding: 20px 60px;
 }
 
-.hd h3, .ssd h3 {
+.hd h3, .ssd h3, .ram h3 {
   color: #b68d40;
   font-size: 1.5rem;
 }
 
-.hd h4, .ssd h4 {
+.hd h4, .ssd h4, .ram h4 {
   font-size: 1.3rem;
   color: #946309;
 }
 
-.hd-container, .ssd-container {
+.hd-container, .ssd-container, .ram-container {
+  width: 60%;
+  margin: 10px auto;
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 20px;
+}
+
+.processadores-container {
   width: 60%;
   margin: 10px auto;
   background: #ffffff;
@@ -429,14 +440,20 @@ a:hover {
 .img-memorias {
   margin: 0 auto;
   border-radius: 10px;
-  max-width: 650px;
+  max-width: 600px;
   max-height: 320px;
+}
+
+.recomendacoes-container {
+  width: 60%;
+  margin: 10px auto;
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 20px;
 }
 
 .recomendacoes {
   background:#f4ebd0;
-  padding: 0 60px;
-  margin-bottom: 40px;
 }
 
 .recomendacoes h2 {
@@ -455,14 +472,6 @@ a:hover {
   padding: 0;
 }
 
-.recomendacoes-container {
-  width: 60%;
-  margin: 0 auto;
-  background: #ffffff;
-  padding: 40px;
-  border-radius: 20px;
-}
-
 .componentes-container{
   display: flex;
   gap: 20px;
@@ -474,7 +483,7 @@ a:hover {
   max-width: 50px;
   max-height: 50px;
   margin: 0;
-  flex-basis: 5%;
+  flex-basis: 20%;
 }
 
 .componentes-container p {
